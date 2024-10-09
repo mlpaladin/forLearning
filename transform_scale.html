@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .film{
+            position: relative;
+            margin: 100px auto;
+            width: 300px;
+            height: 160px;
+            background-image: url(./resources/film.jpg);
+            background-size: cover;
+            overflow: hidden;
+        }
+        img.startButton{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 60px;
+            transition: all .3s;
+        }
+        .film:hover img.startButton{
+            transform: translate(-50%,-50%) scale(4);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="film">
+        <img src="./resources/startButton.jpeg" alt="" class="startButton">
+    </div>
+</body>
+</html>
